@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shivam Kumar — Backend software engineer specializing in PHP, Symfony, REST APIs, MySQL and troubleshooting.">
+  <title>Shivam Kumar | Backend Software Engineer</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #151f32;
+      --line: #29374b;
+      --text: #f1f5f9;
+      --muted: #a1aec0;
+      --accent: #5eead4;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+    header { border-bottom: 1px solid var(--line); background: #10192a; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; gap: 20px; }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: -1px; }
+    .logo span, .accent { color: var(--accent); }
+    .nav-links { display: flex; gap: 24px; color: var(--muted); font-size: 14px; }
+    .nav-links a:hover { color: var(--accent); }
+    .hero { padding: 110px 0 100px; max-width: 850px; }
+    .eyebrow { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { font-size: clamp(38px, 6vw, 70px); line-height: 1.15; letter-spacing: -2px; margin: 22px 0; }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 670px; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .btn { display: inline-block; border: 1px solid var(--accent); border-radius: 9px; padding: 13px 23px; font-weight: 700; transition: 0.2s; }
+    .btn-primary { background: var(--accent); color: #08131c; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-outline { color: var(--accent); }
+    section { padding: 65px 0; }
+    .section-label { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h2 { font-size: 34px; margin: 8px 0 15px; letter-spacing: -1px; }
+    .section-intro { color: var(--muted); max-width: 700px; margin-bottom: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card { background: var(--card); padding: 28px; border: 1px solid var(--line); border-radius: 14px; }
+    .card h3 { margin-top: 0; margin-bottom: 12px; font-size: 20px; }
+    .card p { color: var(--muted); font-size: 15px; margin: 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .skill { background: #182a35; border: 1px solid #2c514e; color: #a6f4e4; padding: 8px 17px; border-radius: 8px; font-size: 14px; }
+    .process p { color: var(--muted); margin: 10px 0; }
+    .contact { background: linear-gradient(135deg, #132d35, #132039); border: 1px solid #315358; padding: 45px; border-radius: 18px; text-align: center; }
+    .contact p { color: var(--muted); max-width: 550px; margin: 0 auto 25px; }
+    .contact-details { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 25px; margin: 22px auto 28px; }
+    .contact-details a { color: var(--accent); overflow-wrap: anywhere; }
+    .contact-details a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 30px; color: var(--muted); border-top: 1px solid var(--line); font-size: 14px; }
+    @media (max-width: 650px) {
+      .nav-links { gap: 12px; font-size: 12px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 70px 0; }
+      .contact { padding: 28px 18px; }
+      h2 { font-size: 29px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <div class="logo">Shivam<span>.dev</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero">
+        <div class="eyebrow">Backend Software Engineer</div>
+        <h1>Building reliable <span class="accent">backend solutions.</span></h1>
+        <p>I'm Shivam Kumar, a software engineer with approximately 8 years of professional experience. I work with PHP, Symfony, REST APIs, MySQL, and application troubleshooting.</p>
+        <div class="buttons">
+          <a href="#services" class="btn btn-primary">Explore My Services</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 / About me</div>
+        <h2>Engineering with a problem-solving mindset.</h2>
+        <p class="section-intro">My experience includes backend application development, integrating APIs, investigating complex bugs, improving existing systems, and working across development and deployment workflows.</p>
+        <div class="skills">
+          <span class="skill">PHP</span>
+          <span class="skill">Symfony</span>
+          <span class="skill">REST APIs</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Git</span>
+          <span class="skill">Docker</span>
+          <span class="skill">AWS</span>
+          <span class="skill">Debugging</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-label">02 / Expertise</div>
+        <h2>How I can help</h2>
+        <p class="section-intro">Focused technical solutions for existing applications and small development requirements.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>PHP &amp; Symfony Development</h3>
+            <p>Backend features, application maintenance, code improvements, and framework-related troubleshooting.</p>
+          </div>
+          <div class="card">
+            <h3>REST API Integration</h3>
+            <p>Integrating external services, debugging requests and responses, and resolving API communication issues.</p>
+          </div>
+          <div class="card">
+            <h3>MySQL &amp; Database Debugging</h3>
+            <p>Investigating query issues, data retrieval problems, and improving database interactions.</p>
+          </div>
+          <div class="card">
+            <h3>Bug Fixing &amp; Technical Support</h3>
+            <p>Root-cause analysis, Git workflows, development environment troubleshooting, and application fixes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="container">
+        <div class="section-label">03 / Workflow</div>
+        <h2>My approach to technical problems</h2>
+        <div class="card process">
+          <p><strong class="accent">01.</strong> Understand the requirement and reproduce the issue.</p>
+          <p><strong class="accent">02.</strong> Investigate code, logs, APIs, or database behavior.</p>
+          <p><strong class="accent">03.</strong> Implement a focused, maintainable solution.</p>
+          <p><strong class="accent">04.</strong> Validate the fix and document the changes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="section-label">04 / Contact</div>
+          <h2>Have a technical problem to solve?</h2>
+          <p>Let's discuss your application, backend challenge, or small development requirement.</p>
+          <div class="contact-details">
+            <a href="mailto:shivam96342@gmail.com">shivam96342@gmail.com</a>
+            <a href="tel:+917257880045">+91 7257880045</a>
+          </div>
+          <div class="buttons" style="justify-content: center; margin-top: 0;">
+            <a href="mailto:shivam96342@gmail.com?subject=Project%20Inquiry" class="btn btn-primary">Email Me</a>
+            <a href="tel:+917257880045" class="btn btn-outline">Call Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Shivam Kumar. Built with HTML &amp; CSS.</footer>
+</body>
+</html>
